@@ -1,0 +1,421 @@
+/*
+CAMBIOS AL TEXTO
+*/
+
+.entre_comillas_ahcss:before
+{
+    content: open-quote;
+    font-weight: bold;
+}
+
+.entre_comillas_ahcss:after
+{
+    content: close-quote;
+    font-weight: bold;
+}
+
+.texto_en_negrita_ahcss
+{
+    font-weight: bold;
+}
+
+.texto_en_italica_cursiva_ahcss
+{
+    font-style: italic;
+}
+
+.texto_minusculas_ahcss
+{
+   text-transform: lowercase;
+}
+
+.texto_mayusculas_ahcss
+{
+    text-transform: uppercase;
+}
+
+.texto_mayusculas_primera_letra_ahcss
+{
+    text-transform: lowercase;
+}
+
+.texto_mayusculas_primera_letra_ahcss::first-letter
+{
+    text-transform: uppercase;
+}
+
+.texto_subrayado_blanco_ondulado_ahcss
+{
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-style: wavy;
+}
+
+.texto_subrayado_negro_ahcss
+{
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-style: solid;
+}
+
+/*
+BORDES
+*/
+
+.añadir_borde_completo_1px_negro_ahcss
+{
+    border: 1px solid black;
+}
+
+.añadir_borde_completo_1px_blanco_ahcss
+{
+    border: 1px solid white;
+}
+
+.añadir_borde_abajo_1px_negro_ahcss
+{
+    border-bottom: 1px solid black;
+}
+
+.añadir_borde_arriba_1px_negro_ahcss
+{
+    border-top: 1px solid black;
+}
+
+.añadir_borde_izquierda_1px_negro_ahcss
+{
+    border-left: 1px solid black;
+}
+
+.añadir_borde_derecha_1px_negro_ahcss
+{
+    border-right: 1px solid black;
+}
+
+.añadir_boder_del_borde_completo_1px_blanco_ahcss
+{
+    outline: 1px solid white;
+}
+
+.borde_5px_dentro_de_la_capa_con_1px_negro_ahcss
+{
+    outline: 1px solid black;
+    outline-offset: -5px;
+}
+
+.subrayado_con_puntos_rojos_ahcss
+{
+    border-bottom:2px dotted red;
+}
+
+
+
+/*
+MOVER ELEMENTOS
+*/
+
+/* 
+Solo tiene efecto en texto o imágenes, valores en bloques (ejemplo div)
+Body no es un bloque
+*/
+.alineacion_capa_centro_vertical_ahcss
+{
+
+    vertical-align: middle;
+}
+
+/**/
+
+.alineacion_texto_centro_horizontal_ahcss
+{
+text-align:center;
+}
+
+.alineacion_texto_centro_horizontal_si_es_flexible_ahcss
+{
+    justify-content: center;
+}
+
+.alineacion_texto_centro_vertical_si_es_flexible_ahcss
+{
+    align-items: center;	
+}
+
+.alineacion_texto_centro_si_es_flexible_ahcss
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.caja_flexible_ahcss
+{
+	display: flex;
+}
+
+.caja_centrada_si_es_flexible_ahcss
+{
+	margin:auto;
+}
+
+.caja_centrada_horizontal_si_es_flexible_ahcss
+{
+    margin-left: auto;
+    margin-right: auto;	
+}
+
+.caja_centrada_vertical_si_es_flexible_ahcss
+{
+    margin-top: auto;
+    margin-bottom: auto;	
+}
+
+
+
+.imagen_izquierda_ahcss
+{
+    float: left;
+}
+
+.imagen_derecha_ahcss
+{
+    float: right;
+}
+
+.posicion_absoluta_ahcss
+{
+    position: absolute;
+}
+
+.posicion_relativa_ahcss
+{
+    position: relative;
+}
+
+
+/*
+TAMAÑOS
+*/
+
+.tamanio_todo_el_ancho_ahcss
+{
+    width: 100%;
+}
+
+.tamanio_50_por_ciento_ancho_ahcss
+{
+    width: 50%;
+}
+
+.tamanio_50px_ancho_ahcss
+{
+    width: 50px;
+}
+
+.tamanio_texto_50px_ahcss
+{
+    font-size: 50px;
+}
+
+.tamanio_100px_ancho_ahcss
+{
+    width: 100px;
+}
+
+.tamanio_texto_100px_ahcss
+{
+    font-size: 100px;
+}
+
+.tamanio_50px_alto_ahcss
+{
+    height: 50px;
+}
+
+.tamanio_200px_alto_ahcss
+{
+    height: 200px;
+}
+
+.tamanio_500px_alto_ahcss
+{
+    height: 500px;
+}
+
+.no_ocupe_todo_el_horizontal_ahcss
+{
+    display: inline;
+}
+
+.tamanio_total_contenedor_body_ahcss
+{
+	
+	/*height: 100%;*/
+	/**/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left : 0;
+	right : 0;
+	/**/
+	width: 100%;
+}
+
+.tamanio_total_contenedor_padre_ahcss
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+/*
+COLORES DE FONDO
+*/
+
+.fondo_blanco_ahcss
+{
+    background-color: white;
+}
+
+.fondo_negro_ahcss
+{
+    background-color: black;
+}
+
+.fondo_amarillo_ahcss
+{
+    background-color: yellow;
+}
+
+.fondo_azul_ahcss
+{
+    background-color: blue;
+}
+
+.fondo_azul_claro_ahcss
+{
+    background-color: lightblue;
+}
+
+.fondo_naranja_ahcss
+{
+    background-color: orange;
+}
+
+.fondo_rojo_ahcss
+{
+    background-color: red;
+}
+
+.fondo_verde_ahcss
+{
+    background-color: green;
+}
+
+.fondo_verde_claro_ahcss
+{
+    background-color: lightgreen;
+}
+
+
+
+/*
+COLORES DE TEXTO
+*/
+
+.texto_blanco_ahcss
+{
+    color: white;
+}
+
+.texto_negro_ahcss
+{
+    color: black;
+}
+
+.texto_amarillo_ahcss
+{
+    color: yellow;
+}
+
+.texto_azul_ahcss
+{
+    color: blue;
+}
+
+.texto_azul_claro_ahcss
+{
+    color: lightblue;
+}
+
+.texto_naranja_ahcss
+{
+    color: orange;
+}
+
+.texto_rojo_ahcss
+{
+    color: red;
+}
+
+.texto_verde_ahcss
+{
+    color: green;
+}
+
+.texto_verde_claro_ahcss
+{
+    color: lightgreen;
+}
+
+/*
+COLORES DE BORDE
+*/
+
+.borde_blanco_ahcss
+{
+    border-color: white;
+}
+
+.borde_negro_ahcss
+{
+    border-color: black;
+}
+
+.borde_amarillo_ahcss
+{
+    border-color: yellow;
+}
+
+.borde_azul_ahcss
+{
+    border-color: blue;
+}
+
+.borde_azul_claro_ahcss
+{
+    border-color: lightblue;
+}
+
+.borde_naranja_ahcss
+{
+    border-color: orange;
+}
+
+.borde_rojo_ahcss
+{
+    border-color: red;
+}
+
+.borde_verde_ahcss
+{
+    border-color: green;
+}
+
+.borde_verde_claro_ahcss
+{
+    border-color: lightgreen;
+}
+
