@@ -5,8 +5,8 @@ public class Main {
 	public static void main(String[] args) 
 	{
 		//PruebasDebugWrite1();
-		PruebasDebugWrite2();
-		//Pruebas_Matematicas();
+		//PruebasDebugWrite2();
+		Pruebas_Matematicas();
 
 	}
 	
@@ -76,7 +76,19 @@ public class Main {
 	
 	public static void Pruebas_Matematicas()
 	{
-		Debug.Wanl(Calculator.Sum(1,1,4));
+		/*
+		Debug.Wanl(Calculator.Add(1,1,4));
+		Debug.Wanl(Calculator.Sub(14,2,3));
+		Debug.Wanl(Calculator.Mul(14,2,3));
+		Debug.Wanl(Calculator.Div(14,2,3));
+		Debug.Wanl(Calculator.Div(14.0,2.0,3.0));
+		Debug.Wanl(Calculator.Div(0,2,3));
+		Debug.Wanl(Calculator.Div(14,0,3));
+		*/
+		
+		Debug.Wanl(Calculator.Add("56","18"));
+
+
 	}
 	
 
