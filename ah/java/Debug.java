@@ -1,4 +1,4 @@
-package ah;
+//package ah;
 
 public class Debug 
 {
@@ -49,8 +49,7 @@ public class Debug
 	{ 
 		SetContent(arg,times);
 	}
-	
-	// METHODS _content
+
 	public void SetEmptyContent()
 	{
 		SetContent("");
@@ -59,6 +58,7 @@ public class Debug
 	{
 		SetEmptyContent();
 	}
+	// METHODS _content
 	
 	public void AddContent(String arg)
 	{		
@@ -104,7 +104,7 @@ public class Debug
 	}
 	
 	
-	
+	// CONSTRUCTORS
 	public Debug() 
 	{
 		SetEmptyContent();
@@ -193,16 +193,35 @@ public class Debug
 	// SHORTCUT
 	public static void Wanl(String arg)
 	{
-		Debug.WriteAndNewLine(arg);
+		WriteAndNewLine(arg);
+	}
+	public static void WriteAndNewLine(String arg, Integer times)
+	{
+		for(Integer i=0; i<times; i++)
+		{
+			WriteAndNewLine(arg);
+		}
+	}
+	public static void Wanl(String arg, Integer times)
+	{
+		WriteAndNewLine(arg, times);
 	}
 	
 	public static void WriteAndNewLine(Integer arg)
 	{
-		System.out.println(arg);
+		WriteAndNewLine(arg);
 	}	
 	public static void Wanl(Integer arg)
 	{
-		Debug.WriteAndNewLine(arg);
+		WriteAndNewLine(arg);
+	}
+	public static void WriteAndNewLine(Integer arg,Integer times)
+	{
+		WriteAndNewLine(arg,times);
+	}
+	public static void Wanl(Integer arg,Integer times)
+	{
+		WriteAndNewLine(arg,times);
 	}
 	public static void WriteAndNewLine(Double arg)
 	{
@@ -212,25 +231,36 @@ public class Debug
 	{
 		Debug.WriteAndNewLine(arg);
 	}
-	public static void WriteAndNewLine(Float arg)
+	public static void WriteAndNewLine(Double arg,Integer times)
 	{
-		System.out.println(arg);
-	}	
-	public static void Wanl(Float arg)
-	{
-		Debug.WriteAndNewLine(arg);
+		WriteAndNewLine(arg,times);
 	}
+	public static void Wanl(Double arg,Integer times)
+	{
+		WriteAndNewLine(arg,times);
+	}
+
 	
 	
 	// NEW LINE AND WRITING PARAMETER 
 	public static void WriteInNewLine(String arg)
 	{
-		Debug.Write(Gnl()+arg);
+		Write(Gnl()+arg);
 	}	
 	// SHORTCUT
 	public static void Winl(String arg)
 	{
-		Debug.WriteInNewLine(arg);
+		WriteInNewLine(arg);
+	}
+	public static void WriteInNewLine(String arg,int times)
+	{
+		for (int i = 0; i < times; i++) {
+			Write(Gnl()+arg);
+		}
+	}
+	public static void Winl(String arg,int times)
+	{
+		WriteInNewLine(arg,times);
 	}
 	
 	public static void WriteInNewLine(Integer arg)
@@ -239,7 +269,17 @@ public class Debug
 	}	
 	public static void Winl(Integer arg)
 	{
-		Debug.WriteInNewLine(arg);
+		WriteInNewLine(arg);
+	}
+	public static void WriteInNewLine(Integer arg,int times)
+	{
+		for (int i = 0; i < times; i++) {
+			Write(Gnl()+arg);
+		}
+	}
+	public static void Winl(Integer arg,int times)
+	{
+		WriteInNewLine(arg,times);
 	}
 	public static void WriteInNewLine(Double arg)
 	{
@@ -249,15 +289,17 @@ public class Debug
 	{
 		Debug.WriteInNewLine(arg);
 	}
-	public static void WriteInNewLine(Float arg)
+
+	public static void WriteInNewLine(Double arg,int times)
 	{
-		Debug.Write(Gnl()+arg);
-	}	
-	public static void Winl(Float arg)
-	{
-		Debug.WriteInNewLine(arg);
+		for (int i = 0; i < times; i++) {
+			Write(Gnl()+arg);
+		}
 	}
-	
+	public static void Winl(Double arg,int times)
+	{
+		WriteInNewLine(arg,times);
+	}
 	
 	// NEW LINE
 	public static void WriteNewLine()
@@ -268,5 +310,16 @@ public class Debug
 	public static void Wnl()
 	{
 		Debug.WriteNewLine();
+	}
+	public static void WriteNewLine(int times)
+	{
+		for (int i = 0; i < times; i++) {
+			WriteNewLine();
+		}
+	}
+	// SHORTCUT
+	public static void Wnl(int times)
+	{
+		WriteNewLine(times);
 	}
 }
